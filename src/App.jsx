@@ -2,9 +2,9 @@ import { createRoot } from 'react-dom/client';
 import { useState, useEffect } from 'react';
 import './css/util.css';
 import './css/tailwind.css';
-import cloudImg from '../assets/cloud.png';
-import sunriseImg from '../assets/sunrise.png';
-import sunsetImg from '../assets/sunset.png';
+import cloudImg from './assets/cloud.png';
+import sunriseImg from './assets/sunrise.png';
+import sunsetImg from './assets/sunset.png';
 
 function App() {
   // Handling the map
