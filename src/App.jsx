@@ -2,6 +2,9 @@ import { createRoot } from 'react-dom/client';
 import { useState, useEffect } from 'react';
 import './css/util.css';
 import './css/tailwind.css';
+import cloudImg from '../assets/cloud.png';
+import sunriseImg from '../assets/sunrise.png';
+import sunsetImg from '../assets/sunset.png';
 
 function App() {
   // Handling the map
@@ -292,15 +295,15 @@ function App() {
 
         <section className="border border-[#102630]  bg-linear-to-r from-[#0A1E25] shadow-xl/30 rounded-2xl p-6 md:col-span-2 grid grid-cols-3 gap-4">
           <article className='flex text-[#5F828B] flex-col items-center'>
-            <img width={100} src="./src/assets/cloud.png" alt="" />
+            <img width={100} src={cloudImg} alt="" />
             <p className="text-sm font-semibold">Cloud: {cloud}%</p>
           </article>
           <article className='flex flex-col text-[#5F828B] items-center'>
-            <img width={100} src="src/assets/sunrise.png" alt="" />
+            <img width={100} src={sunriseImg} alt="" />
             <p className="text-[15px] font-bold"> Sunrise: {sunrise}</p>
           </article>
           <article className='flex flex-col text-[#5F828B] items-center'>
-            <img width={100} src="src/assets/sunset.png" alt="" />
+            <img width={100} src={sunsetImg} alt="" />
             <p className="text-[15px] font-bold">Sunset: {sunset}</p>
           </article>
         </section>
