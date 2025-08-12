@@ -31,7 +31,7 @@ function App() {
 
   // Fetching API
 
-  const apiKey = "YOUR_API_HERE"; // add your api here and do the required changes to get the code working
+  const apiKey = import.meta.env.VITE_API_KEY; // add your api here and do the required changes to get the code working
 
   // Current Weather State
 
